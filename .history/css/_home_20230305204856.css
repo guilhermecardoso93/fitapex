@@ -1,0 +1,33 @@
+.home {
+  display: flex;
+  min-height: 120vh;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0,100% 0,100% 100%,80% 95%,0 100%)
+}
+
+.banner {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   background: url('../assets/banner.jpg');
+   background-size: cover;
+   background-position: center;
+   filter: brightness(40%)
+}
+
+.highlights {
+  width: 70%;
+  position: relative;
+  display: inline-block;
+  z-index: 11;
+}
+
+.highlights h3 {
+  display: inline;
+  font-size: 2vw;
+  padding: 5px 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  border-left: 6px solid var(--prime)
+}

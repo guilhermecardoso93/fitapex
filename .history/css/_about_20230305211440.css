@@ -1,0 +1,28 @@
+.main {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.main h2 {
+  font-size: 2.5vw;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  display: inline-block;
+}
+
+span {
+  color: var(--prime);
+}
+
+.main h2:before {
+  position: absolute;
+  content: '';
+  background: var(--prime);
+  height: 3px;
+  width: 30%;
+  right: -15px;
+  bottom: 0;
+  border-radius: 50px;
+}

@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  min-height: 120vh;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0,100% 0,100% 100%,80% 95%,0 100%)
+}
+
+.banner {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   background: url('../assets/banner.jpg') cover center;
+
+}
