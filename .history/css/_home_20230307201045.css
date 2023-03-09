@@ -1,0 +1,80 @@
+.home {
+  display: flex;
+  min-height: 120vh;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
+}
+
+.banner {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url("../assets/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(40%);
+}
+
+.highlights {
+  width: 65%;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  z-index: 11;
+}
+
+.highlights h3 {
+  display: inline;
+  font-size: 2vw;
+  padding: 5px 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  border-left: 6px solid var(--prime);
+}
+
+.highlights h1 {
+  font-size: 9vw;
+  text-align: center;
+  font-weight: normal;
+}
+
+.highlights b {
+  color: var(--prime);
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+.highlights .tagline {
+  color: #d7d7d7;
+  font-size: 1.2vw;
+  text-align: center;
+  font-weight: normal;
+  line-height: 32px;
+}
+
+.highlights .join {
+  position: absolute;
+  left: 50%;
+  margin-top: 1.2rem;
+  padding: 5px 20px;
+
+  transform: tanslateX(-500%);
+  font-weight: 800;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+
+  color: var(--prime);
+  border: 2px solid var(--prime);
+  border-radius: 50px;
+  background: transparent;
+
+  transition: 0.3s ease;
+}
+
+.highlights .join:hover {
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  background: var(--prime);
+}

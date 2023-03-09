@@ -1,0 +1,25 @@
+.contact .content {
+  min-height: 100vh;
+}
+
+.contact .content form {
+  margin: auto 0;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5)
+}
+
+.contact .content form input {
+  color: #222;
+  width: 100%;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 1px solid #878787;
+  border-radius: 4px;
+  margin: 15px 0;
+  background: transparent;
+
+}

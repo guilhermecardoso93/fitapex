@@ -1,0 +1,29 @@
+.workout .content {
+  flex-wrap: wrap;
+}
+
+.workout .content .frame {
+  position: relative;
+  width: 350px;
+  padding: 20px;
+  margin: 10px;
+  background: #222;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.5)
+}
+
+.workout .content .frame .box {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.workout .content .frame .box img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: 0.2s ease-in ;
+}

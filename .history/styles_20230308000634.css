@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+@import "./css/_navbar.css";
+@import "./css/_home.css";
+@import "./css/_about.css";
+@import "./css/_workout.css";
+@import "./css/_trainers.css";
+@import "./css/_diet.css";
+@import "./css/_contact.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppisns", sans-serif;
+  outline: none;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --prime: #00ff79;
+}
+
+body {
+  background-color: #131b2b;
+}
+
+.view {
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+
+
+.navbar {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 30px 120px;
+  justify-content: space-between;
+  z-index: 1111;
+  transition: 0.5s ease;
+}
+
+.sticky {
+  padding: 6px 60px;
+  background: #222;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+.sticky .logo {
+  font-size: 2em;
+  color: var(--prime);
+}
+
+.sticky .logo B {
+  color: #fff;
+}
+
+.logo {
+  font-size: 2.8em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo B {
+  color: var(--prime);
+}
+
+ol {
+  display: flex;
+  margin: auto 0;
+}
+
+ol li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+ol li a {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ol li:hover a {
+  color: var(--prime);
+}
+
+// Responsive
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding: 0 60px;
+  }
+
+  .navbar ol {
+    display: none;
+  }
+
+  .navbar .toggle {
+    height: 25px;
+    width: 25px;
+    margin: auto 0;
+    cursor: pointer;
+    background: url("../assets/menubar.jpg");
+    background-size: 25px;
+    background-position: center;
+    filter: invert(1);
+    background-repeat: no-repeat;
+  }
+}

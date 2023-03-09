@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+@import "./css/_navbar.css";
+@import "./css/_home.css";
+@import "./css/_about.css";
+@import "./css/_workout.css";
+@import "./css/_trainers.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppisns", sans-serif;
+  outline: none;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --prime: #00ff79;
+}
+
+body {
+  background-color: #131b2b;
+}
+
+.view {
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}

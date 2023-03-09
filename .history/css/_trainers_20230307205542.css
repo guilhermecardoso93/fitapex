@@ -1,0 +1,33 @@
+.trainers .content {
+  flex-wrap: wrap;
+}
+
+.trainers .content .frame {
+  position: relative;
+  border-radius: 10px;
+  width: 500px;
+  padding: 30px 30px 40px 30px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  background: #222;
+}
+
+.trainers .content .frame .box {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.trainers .content .frame .box img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  transtion: 0.2s ease-in;
+}
+
+.trainers .content .frame .box:hover img {
+  filter: grayscale(0);
+}

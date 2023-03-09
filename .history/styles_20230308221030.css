@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+@import "./css/_navbar.css";
+@import "./css/_home.css";
+@import "./css/_about.css";
+@import "./css/_workout.css";
+@import "./css/_trainers.css";
+@import "./css/_diet.css";
+@import "./css/_contact.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppisns", sans-serif;
+  outline: none;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --prime: #00ff79;
+}
+
+body {
+  background-color: #131b2b;
+}
+
+.view {
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+
+
+
+// Responsive
+@media (max-width: 767px) {
+  /* de 0px até 767px */
+}
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0 60px;
+  }
+
+  .navbar ol {
+    display: none;
+  }
+
+  .navbar ol.active {
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding-top: 10px;
+    background: #222;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    height: calc(100% - 60px);
+    gap: 5px;
+  }
+
+  .navbar ol.active li {
+    font-size: 25px;
+  }
+
+  .navbar .toggle {
+    height: 25px;
+    width: 25px;
+    margin: auto 0;
+    cursor: pointer;
+    background: url("../assets/menubar.jpg");
+    background-size: 25px;
+    background-position: center;
+    filter: invert(1);
+    background-repeat: no-repeat;
+  }
+
+  .navbar .toggle.active {
+    background: url("../assets/close.png");
+    background-size: 40px;
+    background-position: center;
+    filter: invert(1);
+  }
+
+  .highilights h3 {
+    font-size: 3vw;
+    padding: 5px 10px;
+    border-left: 3px solid var(--prime);
+  }
+
+  .highilights h1 {
+    font-size: 16vw;
+  }
+
+  .highilights .join {
+    font-size: 1.8vw;
+    border: 1px solid var(--prime);
+  }
+
+  .main h2 {
+    font-size: 1.5rem;
+  }
+
+  .main h6 {
+    font-size: 10px;
+  }
+
+  .about .content {
+    flex-direction: column;
+  }
+
+  .workout .content .frame {
+    width: 260px;
+    padding: 18px;
+  }
+
+  .trainers .content .frame {
+    width: 350px;
+    padding: 15px 15px 40px 15px;
+    margin: 10px 5px;
+  }
+
+  .trainers .content .frame .box {
+    height: 200px;
+  }
+}

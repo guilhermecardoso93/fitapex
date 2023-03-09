@@ -1,0 +1,13 @@
+.diet .content .row {
+  display: flex;
+  postition: relative;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.diet .content .row .cols {
+  position: relative;
+  width: 600px;
+  padding: 20px 50px;
+}
